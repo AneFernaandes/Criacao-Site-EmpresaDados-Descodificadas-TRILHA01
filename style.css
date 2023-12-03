@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+html {
+  overflow-x: hidden;
+}
+body{
+  background-color: white;
+}
+
+
+/* CABEÇALHO / MENU */
+
+.menuinicial a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 30px;
+  color: #E1F8FC;
+  font-weight: 600;
+}
+.menuinicial a:hover {
+  color: #E20015;
+}
+
+.logo {
+  text-decoration: none;
+  color: #43C9DC;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.logo img{
+  width: 50px;
+}
+
+header {
+  position: fixed; 
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0C2A3E;
+  padding: 15px 5%;
+  z-index: 1; 
+}
+header div{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+/*responsividade*/
+@media screen and (max-width: 768px) {
+  .logo h3{
+    display: none;
+  }
+  .menuinicial a {
+    font-size: 0.8rem;
+  }
+  
+}
+
+@media screen and (max-width: 426px) {
+  .logo h3{
+    display: none;
+  }
+  .menuinicial a {
+    font-size: 0.8rem;
+  }
+
+
+}
+ /* PRIMEIRA PAGINA */
+.sobre {
+  height: 150vh; 
+  background-repeat: no-repeat;
+  display: flex; 
+  background-image: url(fundo.jpg) ;
+  background-size: 100% 150vh;
+  justify-content: center;
+}
+ 
+.conteudo-inicio p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.conteudo-inicio {
+  margin-top: 180px;
+  width: 60%;
+}
+
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+ 
+}
+
+/*responsividade*/
+@media screen and (max-width: 768px) {
+  .sobre {
+    height: 100vh; 
+    background-size: 100% 100vh;
+
+  }
+  h1 {
+    font-size: 3rem;   
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .sobre {
+    height: 100vh; 
+    background-size: 100% 100vh;
+
+  }
+  h1 {
+    font-size: 2.5rem;   
+ 
+  }
+}
+
+#btn{
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: #43C9DC 0px 5px 15px;
+  color: white;
+  border-radius: 10px;
+  background-color: #E20015;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+
+
+#btn:hover{
+  color: #0B2532;
+}
+
+/*responsividade*/
+@media screen and (max-width: 768px) {
+  #btn {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 426px) {
+  #btn {
+    font-size: 1rem;
+  }
+
+}
+
+/* PAGINA 2 VERMELHA */
+
+
+.pag1-vermelho{
+  height: 30vh; 
+  display: flex;
+  background-color: #E20015;
+  align-items: center;
+  justify-content: center;
+}
+
+.pag1-vermelho p{
+  font-size: 2rem;
+  margin-top: 50px; 
+  text-align: center;
+  font-style: italic;
+  color: white;
+}
+
+/* PAGINA 2 BRANCA */
+
+.pag1-branco2{
+  height: 16vh; 
+}
+
+
+
+/*PAGINA 2 SERVIÇOS*/
+.secao-servico {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem 3.5rem;
+  text-align: center;
+  gap: 30px; 
+}
+
+.secao-servico div{
+  background-color: #0B2532;
+  border-radius: 10px;
+
+}
+
+.secao-servico p {
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+
+.secao-servico .botao-saibamais:hover {
+  color: #43C9DC;
+}
+
+.secao-servico img {
+  margin-top: 0;
+  width: 100%;
+  
+}
+.secao-servico img:hover {
+  opacity: 0.7;
+}
+ 
+
+#servicos{
+  font-size: 40px;
+  text-align: center; 
+  color: #0B2532;
+  padding-top: 50px; 
+}
+
+.secao-servico .subtitulo {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.botao-saibamais {
+  text-decoration: none;
+  color: #E20015;
+  font-weight: 800;
+  font-size: 20px;
+  
+}
+
+
+/*responsividade*/
+@media screen and (max-width: 768px) {
+  .secao-servico {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .secao-servico {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
+
+/* PAGINA VIDEO */
+.importancia{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem 3.5rem;
+  text-align: center;
+  gap: 20px;
+  min-height: 80vh;
+  background-color: #E20015;  
+}
+.importancia h3{
+  font-size: 2.5rem;
+  font-style: italic;
+  color: white;
+  padding-top: 50px;
+}
+
+/*responsividade*/
+@media screen and (max-width: 768px) {
+  .importancia {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .importancia h3{
+    font-size: 1.5rem;
+    align-items: center;
+    padding-top: 15px;
+  }
+  .importancia iframe{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .importancia {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+  .importancia h3{
+    font-size: 1.5rem;
+    align-items: center;
+    padding-top: 15px;
+  }
+  .importancia iframe{
+    width: 80%;
+  }
+}
+
+
+/* CLIENTES */
+
+.clientes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientesempresa h3{
+  font-size: 40px;
+  text-align: center; 
+  color: #0B2532;
+  padding-top: 50px;
+}
+ 
+
+.clientes img{
+    width: 150px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+
+/* LOCALIZAÇÃO */
+
+.localizacao h3{
+  font-size: 40px;
+  text-align: center; 
+  color: white;
+padding-top: 40px;
+ 
+ 
+}
+
+.localizacao{
+  background-color: #0B2532;
+ 
+}
+
+.localizacao iframe{
+  margin: 20px auto;
+}
+
+
+.pagina-servicos , .pagina3, .localizacao, .clientesempresa {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+
+
+
+/*FALE CONOSCO*/
+
+.pagina3 h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color:  white;
+  margin: 2rem;
+}
+
+.pagina3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  display: flex; 
+  background-image: url(fundo-rodape.jpg) ;
+  background-size: 100% 150vh;
+  justify-content: center;
+}
+form {
+  padding: 30px 185px; 
+  box-shadow:  #E20015 15px 15px 15px;
+  color:  white;
+  border-radius: 20px;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 6px; 
+}
+
+form label {
+  font-size: 20px; 
+}
+
+form input, textarea {
+  padding: 5px;
+  background-color: #d3d3d3;
+}
+
+/*responsividade*/
+@media screen and (max-width: 768px) {
+  form {
+    padding: 30px 30px; 
+  }
+
+}
+
+@media screen and (max-width: 426px) {
+  form {
+    padding: 30px 30px; 
+  }
+
+
+}
+
+
+/*RODAPÉ*/
+
+
+footer {
+  letter-spacing: 1px;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+#rodapesite {
+  background-color: #0B2532;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 3.5rem;
+  
+
+  
+}
+#footer-contato h4,
+h3 {
+  margin-bottom: 0.75rem;
+}
+
+#socialmedia {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+#socialmedia img {
+  height: 3rem;
+  width: 3rem;
+}
+#socialmedia img:hover {
+  opacity: 0.6;
+}
+.lista-footer {
+  flex-direction: column;
+  list-style: none;
+}
+.lista-footer .foter-link {
+  color: white;
+  text-decoration: none;
+}
+.lista-footer .foter-link:hover {
+  color: #E20015;
+
+}
+
+/*responsividade*/
+@media screen and (max-width: 768px) {
+  #rodapesite {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #rodapesite {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
